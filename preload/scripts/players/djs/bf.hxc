@@ -130,7 +130,7 @@ class BoyfriendFreeplayDJ extends AnimateAtlasFreeplayDJ
       cartoonSndPersist.stop();
       cartoonSndPersist = null;
     }
-    this.cartoonSnd = FunkinSound.load(Paths.sound(getRandomFlashToon()), 1.0, false, true, true, () -> {
+    this.cartoonSnd = FunkinSound.load(Paths.sound(getRandomFlashToon()), 1.0, false, true, true, false, () -> {
       var animPrefix = playableCharData.getAnimationPrefix('cartoon');
       if (animPrefix != null) playFlashAnimation(animPrefix, true, false, false, 60);
     });
